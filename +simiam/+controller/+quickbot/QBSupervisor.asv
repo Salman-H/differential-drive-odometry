@@ -13,7 +13,6 @@ classdef QBSupervisor < simiam.controller.Supervisor
 
 % Copyright (C) 2013, Georgia Tech Research Corporation
 % see the LICENSE file included with this software
-%
 % Updated by Salman Hashmi
 
     properties
@@ -188,7 +187,7 @@ classdef QBSupervisor < simiam.controller.Supervisor
             y_dt = distance_center * sin(theta);
             theta_dt = (distance_right - distance_left) / L;
             
-            % updated estimate of robot pose
+            % new robot pose
             theta_new = theta + theta_dt;
             x_new = x + x_dt;
             y_new = y + y_dt;                           
