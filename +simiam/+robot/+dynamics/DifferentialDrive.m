@@ -2,6 +2,8 @@ classdef DifferentialDrive < simiam.robot.dynamics.Dynamics
 
 % Copyright (C) 2013, Georgia Tech Research Corporation
 % see the LICENSE file included with this software
+
+% Updated by Salman Hashmi
     
     properties
         wheel_radius
@@ -45,14 +47,13 @@ classdef DifferentialDrive < simiam.robot.dynamics.Dynamics
             dz(3) = z(5);
         end
         
+        % Transforms unicycle (v,w) to diff-drive (vel_r, vel_l)
         function [vel_r,vel_l] = uni_to_diff(obj,v,w)
             R = obj.wheel_radius;
             L = obj.wheel_base_length;
             
-            %% START CODE BLOCK %%
-            vel_r = 0;
-            vel_l = 0;
-            %% END CODE BLOCK %%
+            vel_r = (2*v - w*L) / 2*R;
+            vel_l = (2*v + w*L) / 2*R;
         end
         
         function [v,w] = diff_to_uni(obj,r,l)
