@@ -193,8 +193,8 @@ classdef QuickBot < simiam.robot.Robot
         function ir_distances = get_ir_distances(obj)
             %% Converts between raw/digitized IR values and distances(m)
             %  lookup table: 
-            %  V_adc           <-> V_analog    <-non-linear-> distance_m
-            %  ir_array_values <-> ir_voltages <-non-linear-> ir_distances
+            %       V_adc       <->   V_analog    <->  distance_m
+            %  ir_array_values  <->  ir_voltages  <->  ir_distances
             
             % array of raw IR digitized values (from beaglebone ADC)
             ir_array_values = obj.ir_array.get_range();
