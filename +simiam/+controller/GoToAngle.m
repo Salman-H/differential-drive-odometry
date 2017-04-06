@@ -70,7 +70,7 @@ classdef GoToAngle < simiam.controller.Controller
             % print IR measured distances
             ir_distances = robot.get_ir_distances();
             for i=1:numel(ir_distances)
-%                 fprintf('IR %d: %0.3fm\n', i, ir_distances(i));
+                 fprintf('IR %d: %0.3fm\n', i, ir_distances(i));
             end
             
             outputs = obj.outputs;  % make a copy of the output struct
