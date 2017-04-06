@@ -195,14 +195,17 @@ classdef QuickBot < simiam.robot.Robot
             %  lookup table: 
             %  V_adc           <-> V_analog    <-non-linear-> distance_m
             %  ir_array_values <-> ir_voltages <-non-linear-> ir_distances
+
+            ir_distances_from_table = [0.04 0.05 0.06 0.07 0.08 0.09 0.10 0.12 0.14 0.16 0.18 0.2 0.25 0.30];
+            ir_voltages_from_table = [2.750 2.350 2.050 1.750 1.550 1.400 1.275 1.075 0.925 0.805 0.725 0.650 0.500 0.400];
             
             % array of raw IR digitized values (from beaglebone ADC)
             ir_array_values = obj.ir_array.get_range();
             
-            % array of analog voltages
-            ir_voltages = ir_array_values / 500;
+            % convert from ADC bits to array of analog voltages
+            ir_voltages = ir_array_values * (2/1000);
             
-            % using a 5th-order curve to fit the values in the lookup table
+            % using a 5th-order curve to fit above values in the lookup table
             coeff = polyfit(ir_voltages_from_table, ir_distances_from_table, 5);
             
             % interpolating coeff on the lookup table
