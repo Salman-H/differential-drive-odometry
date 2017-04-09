@@ -15,10 +15,12 @@ Simiam is a MATLAB-based educational bridge between theory and practice in robot
 The actual robot position can be compared to the odometry-estimated position to test odometry implementation.
 
 initial pose:
-<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_a_bot_final_pose.PNG" alt="" width="400">
+<br />
+<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_a_bot_final_pose.PNG" alt="">
 
 final pose:
-<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_b_bot_final_pose.PNG" alt="" width="400">
+<br />
+<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_b_bot_final_pose.PNG" alt="">
 
 <h4>4. The five on-board IR range sensors independantly detect obstacles:</h4>
 <img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/Inked4_bot_ir_skirt_LI.jpg" alt="" width="500">
@@ -27,4 +29,4 @@ The IR sensors have a range of upto 30 cm or 0.3 m. Skirts from sensors 1, 2 and
 read approximately 0.3 m as no obstacle is detected in their skirts. Sensors 3 are 4 are closer than 0.3 m to the corner and, therefore, 
 read shorter distances.
 
-<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/Inked5_bot_ir_obstacle_LI.jpg" alt="" width="500">
+<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/Inked5_bot_ir_obstacle_LI.jpg" alt="" width="400">
