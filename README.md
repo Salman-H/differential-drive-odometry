@@ -16,11 +16,11 @@ The actual robot position can be compared to the odometry-estimated position to 
 
 initial pose:
 <br />
-<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_a_bot_final_pose.PNG" alt="" width="800">
+<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_a_bot_final_pose.PNG" alt="" width="750">
 
 final pose:
 <br />
-<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_b_bot_final_pose.PNG" alt="" width="800">
+<img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/3_b_bot_final_pose.PNG" alt="" width="750">
 
 <h4>4. The five on-board IR range sensors independantly detect obstacles:</h4>
 <img src="https://github.com/Salman-H/differential-drive-odometry/blob/master/figures/Inked4_bot_ir_skirt_LI.jpg" alt="" width="500">
